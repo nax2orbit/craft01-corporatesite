@@ -14,7 +14,11 @@ COPY Gemfile ${APP_HOME}/Gemfile
 COPY Gemfile.lock ${APP_HOME}/Gemfile.lock
 
 # パッケージリストを最新にする
-RUN apt-get update
+# 必要なパッケージをインストールする
+RUN apt-get update -qq && apt-get install -y \
+  nodejs \
+  npm
+
 
 # Gemをアップデート
 RUN bundle install

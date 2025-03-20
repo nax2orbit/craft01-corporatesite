@@ -35,6 +35,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 gem 'dotenv-rails'
+gem 'bootstrap', '~> 5.3.0'
 gem 'sassc-rails'
 
 group :development, :test do
