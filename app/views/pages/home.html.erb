@@ -53,3 +53,34 @@
       </button>
   </div>
 </div>
+
+<!-- セクション1：画像左・テキスト右 -->
+<div class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <%= image_tag "image4.jpg", class: "img-fluid", alt: "Image 4" %>
+    </div>
+    <div class="col-md-6">
+      <h3>タイトル1</h3>
+      <p>これは画像4の説明文です。左に画像、右にテキストのレイアウトです。</p>
+    </div>
+  </div>
+</div>
+
+<!-- セクション2：画像右・テキスト左 -->
+<div class="container my-5">
+  <div class="row align-items-center flex-md-row-reverse">
+    <div class="col-md-6">
+      <%= image_tag "image5.jpg", class: "img-fluid", alt: "Image 5" %>
+    </div>
+    <div class="col-md-6">
+      <h3>タイトル2</h3>
+      <p>こちらは画像5の説明文。今度は右に画像、左にテキストのパターンです。</p>
+    </div>
+  </div>
+</div>
+
+<!-- お問い合わせボタン -->
+<div class="text-center my-5">
+  <%= link_to "お問い合わせ", contact_path, class: "btn btn-primary btn-lg" %>
+</div>
