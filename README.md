@@ -29,3 +29,6 @@ docker-compose -f docker-compose-dev.yml build
 docker-compose -f docker-compose-dev.yml up -d
 docker-compose -f docker-compose-dev.yml exec web rails db:create
 http://localhost:3000
+
+
+![スクリーンショット 2025-03-23 22 34 02](https://github.com/user-attachments/assets/ce5555ff-a1b1-47c8-9187-e5631bb4c727)
